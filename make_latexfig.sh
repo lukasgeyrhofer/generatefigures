@@ -15,8 +15,8 @@ echo '\usepackage{amssymb,amstext}'		>>"$filename"-tmp.tex
 echo '\usepackage{mathrsfs}'			>>"$filename"-tmp.tex
 echo '\usepackage{fullpage}'			>>"$filename"-tmp.tex
 echo '\InputIfFileExists{texheader}{}{}'	>>"$filename"-tmp.tex
-echo '\InputIfFileExists{~/projects/generatefigures/notation}{}{}'    >>"$filename"-tmp.tex
-echo '\InputIfFileExists{~/projects/generatefigures/tangocolors}{}{}' >>"$filename"-tmp.tex
+echo '\InputIfFileExists{/home/lukas/projects/generatefigures/notation}{}{}'    >>"$filename"-tmp.tex
+echo '\InputIfFileExists{/home/lukas/projects/generatefigures/tangocolors}{}{}' >>"$filename"-tmp.tex
 echo '\usepackage{graphicx}'			>>"$filename"-tmp.tex
 echo '\usepackage{color}'			>>"$filename"-tmp.tex
 echo '\pagestyle{empty}'			>>"$filename"-tmp.tex
