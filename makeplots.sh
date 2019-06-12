@@ -6,7 +6,7 @@ do
 	gnuplot $plotfile
 done
 
-if [[ -f *.eps ]]
+if [[ -n "$(ls *.eps 2>/dev/null)" ]]
 then
     for epsfile in `ls *.eps`
     do
@@ -15,7 +15,7 @@ then
     done
 fi
 
-if [[ -f *.svg ]]
+if [[ -n "$(ls *.svg 2>/dev/null)" ]]
 then
     for svgfile in `ls *.svg`
     do
