@@ -5,7 +5,7 @@ filename=$(basename "$1")
 filename="${filename%.*}"
 
 #  Use Inkscape to separate image from text
-inkscape -z -C --file=$1 --export-pdf="$filename"-tmp-src.pdf --export-latex
+inkscape -z -C --export-file="$filename"-tmp-src.pdf --export-latex $1 2> /dev/null
 
 #  Create temporary TeX source to recombine image and text
 #    & use a texheader file if locally available
